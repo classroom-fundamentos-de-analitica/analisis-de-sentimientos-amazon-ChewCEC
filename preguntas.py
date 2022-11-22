@@ -97,6 +97,7 @@ def pregunta_04():
     # Importe GridSearchCV
     # Importe Pipeline
     # Importe BernoulliNB
+
     from sklearn.feature_extraction.text import CountVectorizer
     from sklearn.model_selection import GridSearchCV
     from sklearn.pipeline import Pipeline
@@ -127,7 +128,7 @@ def pregunta_04():
     pipeline = Pipeline(
         steps=[
             ("countVectorizer", countVectorizer),
-            ("bernoulliNB", BernoulliNB())
+            ("BernoulliNB", BernoulliNB())
         ]
     )
 
